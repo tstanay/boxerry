@@ -1,0 +1,43 @@
+.eauth-service-link::before, .eauth-service-link::after {
+	background: rgba(0, 0, 0, 0) url("/img/auth.png") no-repeat;
+}
+.eauth-service-id-proberry .eauth-service-link::before {
+	background-position: 0 -505px;
+}
+.eauth-service-link {
+	text-indent: -9999px;
+	width: 32px;
+}
+.header-top-notice {
+	background-color: #f5fbfd;
+	border: 1px solid #bce8f1;
+	color: #000;
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-weight: 400;
+}
+.subscribe-block .label {
+	position: absolute;
+	width: auto;
+	height: auto;
+	line-height: normal;
+	border-radius: 0;
+	font-weight: 600;
+	left: 25px;
+	top: 10px;
+}
+.subscribe-block .product-label {
+	font-size: 22px;
+	text-transform: uppercase;
+	margin-bottom: 5px;
+	font-weight: 500;
+}
+.subscribe-block .product-category {
+	color: #A9A9A9;
+	margin-bottom: 5px;
+}
+.subscribe-block .product-price {
+	font-size: 19px;
+	letter-spacing: 1px;
+}
