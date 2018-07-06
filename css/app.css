@@ -736,7 +736,8 @@ h3 + small {
 	font-size: 18px;
 	font-weight: 300;
 }
-.wpo-pagination ul.pagination > li > a, .wpo-pagination ul.pagination > li > a{
+.wpo-pagination ul.pagination > li > a,
+.wpo-pagination ul.pagination > li > span{
 	border: solid 1px #ff4795;
 	margin-right: 8px;
 	color: #000;
@@ -748,11 +749,13 @@ h3 + small {
 .wpo-pagination ul.pagination > li.next > a{
 	width: 39px;
 }
-.wpo-pagination ul.pagination > li > a.active{
+.wpo-pagination ul.pagination > li > a.active,
+.wpo-pagination ul.pagination > li > span.active{
 	background: #ff4795;
 	color: #fff;
 }
-.wpo-pagination ul.pagination > li > a:hover, .wpo-pagination ul.pagination > li > a:hover{
+.wpo-pagination ul.pagination > li > a:hover,
+.wpo-pagination ul.pagination > li > span:hover{
 	color: #fff;
 	background: #ff4795;
 }
