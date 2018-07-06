@@ -744,10 +744,15 @@ h3 + small {
 }
 .wpo-pagination ul.pagination > li.prev > a{
 	padding-right: 0;
+	padding-left: 0;
 }
 .wpo-pagination ul.pagination > li.prev > a,
-.wpo-pagination ul.pagination > li.next > a{
+.wpo-pagination ul.pagination > li.next > a,
+.wpo-pagination ul.pagination > li:first-child > span{
 	width: 39px;
+}
+.wpo-pagination ul.pagination > li:first-child > span{
+	padding-left: 12px;
 }
 .wpo-pagination ul.pagination > li > a.active,
 .wpo-pagination ul.pagination > li > span.active{
