@@ -237,7 +237,7 @@ a:hover {
 }
 .breadcrumb li a, .breadcrumb li {
 	color: #a1a3a0;
-	font-size: 12px;
+	font-size: 14px;
 	font-weight: 300;
 	line-height: 24px;
 }
@@ -403,7 +403,7 @@ h3 + small {
 	vertical-align: top;
 }
 .product-block .product-image  {
-	height: 200px;
+	height: 230px;
 }
 .product-grid.product-block {
 	margin-bottom: 50px;
@@ -477,7 +477,7 @@ h3 + small {
 	font-weight: 500;
 }
 .product-info .product-list {
-	margin-top: 80px;
+	margin-top: 50px;
 }
 .product-info .product-list .item, .product-info .product-list p {
 	font-family: Open Sans, sans-serif;
@@ -677,7 +677,7 @@ h3 + small {
 	text-align: center;
 }
 .content-product-image img{
-	height: 200px;
+	height: 230px;
 }
 .pos_title{
 	position: relative;

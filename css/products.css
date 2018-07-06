@@ -2374,7 +2374,6 @@ table.cart img {
 }
 .product-grid .caption .meta {
 	position: relative;
-	padding: 22px 0 0;
 }
 .product-grid .caption .meta:before, .product-grid .caption .meta:after {
 	content: " ";
