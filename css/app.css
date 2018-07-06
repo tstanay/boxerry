@@ -860,9 +860,6 @@ h3 + small {
     header.header-title {
 	    text-align: center;
     }
-	.product-wrapper {
-		width: 50%;
-	}
 	.product-info,
 	.product-info .cart .quantity-adder,
 	.product-info .cart {
@@ -872,4 +869,42 @@ h3 + small {
 	    /*padding-right: 20px;*/
 	    /*padding-left: 2px;*/
     /*}*/
+	.product-info .main-image {
+		margin-bottom: 0px;
+	}
+	.likely {
+		text-align: center;
+	}
+	.product-info .product-list {
+		margin-top: 10px;
+	}
+	.product-info .product-list p{
+		text-align: left;
+	}
+	figure{
+		text-align: center;
+	}
+	.content-product-image {
+		display: inline-block;
+	}
+	.product-block .image-effect{
+		display: block;
+	}
+	.product-grid.product-block {
+		margin-bottom: 10px;
+	}
+	.product-grid .category{
+		display: block;
+	}
+	.pos_title{
+		margin-bottom: 10px;
+		margin-top: 20px;
+	}
+	.pos_title h2{
+		font-size: 17px;
+	}
+	.text-right {
+		text-align: left;
+		margin-top: 21px;
+	}
 }
