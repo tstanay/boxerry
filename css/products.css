@@ -2548,6 +2548,7 @@ table.cart img {
 }
 .product-info .single-product-description {
 	margin: 0 0 20px;
+	text-align: left;
 }
 .product-info .cart {
 	margin: 0;
