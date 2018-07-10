@@ -1,13 +1,42 @@
 $(function () {
 	bx.init();
 
-	$('.auth-btn').click(function(){
-		$('.auth-form__backdrop').show();
+    $('.auth-btn').click(function(){
+        var block = $('.auth-form__backdrop');
+        block.removeClass('topline-modal-hidden dn');
+        setTimeout(function() {block.find('.auth-form__sidebar-container').removeClass('hidden-sidebar');}, 50);
+    });
+
+    $('.topline-modal__close').click(function(){
+        var block = $('.auth-form__backdrop');
+        block.addClass('topline-modal-hidden dn');
+    });
+
+    $('.restore-password').click(function(evt){
+    	$('.request-password-reset').show();
+		$('.account-login').hide();
+		$('.signup-modal').hide();
+        evt.preventDefault();
 	});
 
-	$('.topline-modal__close').click(function(){
-		$('.auth-form__backdrop').hide();
-	});
+    $('.auth-form__back-link').click(function(evt){
+        $('.account-login').show();
+        $('.request-password-reset').hide();
+        $('.signup-modal').hide();
+        evt.preventDefault();
+    });
+
+    $('.reg-modal').click(function(evt){
+        $('.signup-modal').show();
+        $('.account-login').hide();
+        evt.preventDefault();
+    });
+
+    $('.authorization-btn-modal').click(function(evt){
+        $('.signup-modal').hide();
+        $('.account-login').show();
+        evt.preventDefault();
+    });
 
 });
 
