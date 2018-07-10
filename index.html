@@ -8,6 +8,7 @@
     <meta name="csrf-token" content="-MkcoLZQ-Wzs_wgV75AHLrrzK2uVxdO28VgS5FiHyvy3oXXE9GOYJ9vJX0bb9UNX_rdvI-CInODCAn_JO7-Vjg==">
 	<title>Versace bright crystal</title>
 	<meta property="og:image" content="/uploads/thumb/0/product_view/30-2.png">
+	<link href="assets/css/eauth.css" rel="stylesheet">
 <link href="css/bootstrap.css" rel="stylesheet">
 <link href="assets/owl.carousel.min.css" rel="stylesheet">
 <link href="assets/css/font-awesome.css" rel="stylesheet">
@@ -19,7 +20,52 @@
 <link href="css/site.css" rel="stylesheet">
 <link href="css/app.css" rel="stylesheet">
 </head>
-<body>
+<body class="topline-modal__bod">
+<div class="auth-form__backdrop topline-modal-hidden dn">
+	<div class="auth-form__sidebar-container">
+		<span class="topline-modal__close"><i class="fa fa-close"></i></span>
+		<div class="inner account-login">
+			<header class="m-b-lg text-center">
+				<h1>Авторизация</h1>
+				<small class="hidden-xs">
+					Используйте логин и пароль или войдите через соц. сеть
+				</small>
+			</header>
+			<div class="row">
+				<div class="col-sm-12 col-md-12 center-block">
+					<div class="form-wrapper">
+						<form id="customer_login" action="/site/login" method="post">
+							<input type="hidden" name="_csrf" value="JAQuP4OmVgafk7Mgk7rJGBXwchczHRuCJS1XsVV31FhOKW12zNIEbcz3gEHJj6Jbf4I3VHpVdvVLHzv9OwedIA==">					<div class="form-group field-loginform-email required has-error">
+
+							<input type="text" id="loginform-email" class="form-control" name="LoginForm[email]" placeholder="Почта" aria-required="true" aria-invalid="true">
+
+							<p class="help-block help-block-error">Значение «Email» не является правильным email адресом.</p>
+						</div>					<div class="form-group field-loginform-password required has-success">
+
+							<input type="password" id="loginform-password" class="form-control" name="LoginForm[password]" placeholder="Пароль" aria-required="true" aria-invalid="false">
+
+							<p class="help-block help-block-error"></p>
+						</div>
+							<p class="text-center m-b-lg space-top-50">
+								<button type="submit" class="btn-pink" name="login-button">Войти</button>
+							</p>
+							<p class="text-center account-links">
+								<a href="/site/request-password-reset">Забыли пароль?</a><a href="/site/signup">Регистрация</a>					</p>
+						</form>				</div>
+				</div>
+				<div class="text-center">
+					<p class="desc-block space-top-50">Вход через:</p>
+					<div class="form-group">
+						<div class="eauth" id="w0">
+							<ul class="eauth-list">
+								<li class="eauth-service eauth-service-id-proberry"><a class="eauth-service-link" href="/site/login?service=proberry" data-eauth-service="proberry">Proberry.ru</a></li><li class="eauth-service eauth-service-id-facebook"><a class="eauth-service-link" href="/site/login?service=facebook" data-eauth-service="facebook">Facebook</a></li><li class="eauth-service eauth-service-id-vkontakte"><a class="eauth-service-link" href="/site/login?service=vkontakte" data-eauth-service="vkontakte">ВКонтакте</a></li><li class="eauth-service eauth-service-id-odnoklassniki"><a class="eauth-service-link" href="/site/login?service=odnoklassniki" data-eauth-service="odnoklassniki">Одноклассники</a></li>	</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
 <div class="wrap">
 	<header class="top-header">
 		<div class="container">
@@ -41,7 +87,7 @@
 							<li class=""><a href="/product" title="Продукты">Продукты</a></li>
 							<li class=""><a href="/product/#" title="Отзывы">Отзывы</a></li>
 						</ul>
-						<a class="btn btn-pink" href="/site/login">Войти или зарегистрироваться</a>
+						<button class="btn btn-pink auth-btn">Войти</button>
 					</div>
 				</nav>
 			</div>
