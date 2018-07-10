@@ -1,5 +1,14 @@
 $(function () {
 	bx.init();
+
+	$('.auth-btn').click(function(){
+		$('.auth-form__backdrop').show();
+	});
+
+	$('.topline-modal__close').click(function(){
+		$('.auth-form__backdrop').hide();
+	});
+
 });
 
 var bx = {
