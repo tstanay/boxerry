@@ -25,7 +25,7 @@ html {
 	transition: all .2s ease-in-out;
 	overflow-y: auto;
 }
-.auth-form__sidebar-container.hidden {
+.auth-form__sidebar-container.hidden-sidebar {
 	transform: translateX(100%);
 }
 .auth-form__sidebar-container {
