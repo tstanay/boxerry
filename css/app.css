@@ -54,7 +54,10 @@ html {
 	font-size: 25px;
 	font-weight: 300;
 }
-
+.request-password-reset,
+.signup-modal{
+	display: none;
+}
 body {
 	padding-bottom: 178px;
 	position: relative;
@@ -240,7 +243,7 @@ a:hover {
 	padding: 11px 21px;
 }
 .navbar-mega .navbar-collapse {
-	float: left;
+	float: right;
 }
 .navbar-mega .shopping-cart {
 	float: right;
@@ -687,7 +690,7 @@ h3 + small {
 	margin-left: 0;
 }
 .eauth-service-id-proberry .eauth-service-link:before {
-	background: url("../img/auth-btn.png") no-repeat right;
+	background: url("../img/social_proberry.svg") no-repeat right;
 }
 .eauth-service-id-facebook .eauth-service-link:before,
 .eauth-service-id-vkontakte .eauth-service-link:before,

@@ -1,5 +1,5 @@
 .eauth-service-link::before, .eauth-service-link::after {
-	background: rgba(0, 0, 0, 0) url("../img/auth.png") no-repeat;
+	background: rgba(0, 0, 0, 0) url("../img/social_proberry.svg") no-repeat;
 }
 .eauth-service-id-proberry .eauth-service-link::before {
 	background-position: 0 -505px;
