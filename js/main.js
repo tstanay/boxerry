@@ -29,12 +29,14 @@ $(function () {
     $('.reg-modal').click(function(evt){
         $('.signup-modal').show();
         $('.account-login').hide();
+        $('.request-password-reset').hide();
         evt.preventDefault();
     });
 
     $('.authorization-btn-modal').click(function(evt){
         $('.signup-modal').hide();
         $('.account-login').show();
+        $('.request-password-reset').hide();
         evt.preventDefault();
     });
 
