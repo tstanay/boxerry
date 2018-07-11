@@ -192,7 +192,7 @@ a:hover {
 .navbar-mega .shopping-cart {
 	float: right;
 	position: absolute;
-	right: 0;
+	right: -39px;
 	padding-top: 0;
 	padding-right: 10px;
 }
