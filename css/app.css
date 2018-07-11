@@ -2,62 +2,6 @@ html {
 	font-size: 100%;
 	height: 100%;
 }
-.topline-modal__bod{
-	position: relative;
-	min-height: 100%;
-}
-.auth-form__backdrop.dn {
-	display: none;
-}
-.auth-form__backdrop.topline-modal-hidden {
-	background: transparent;
-}
-.auth-form__backdrop{
-	position: absolute;
-	right: 0;
-	top: 0;
-	bottom: 0;
-	width: 100%;
-	height: 100%;
-	left: 0;
-	z-index: 4002;
-	background: rgba(0,0,0,.5);
-	transition: all .2s ease-in-out;
-	overflow-y: auto;
-}
-.auth-form__sidebar-container.hidden-sidebar {
-	transform: translateX(100%);
-}
-.auth-form__sidebar-container {
-	position: fixed;
-	right: 0;
-	top: 0;
-	bottom: 0;
-	z-index: 4003;
-	min-width: 420px;
-	max-width: 100%;
-	width: 360px;
-	padding: 27px 16px;
-	background: #fff;
-	transform: translateX(0);
-	transition: all .2s ease-in-out;
-}
-.topline-modal__close {
-	position: absolute;
-	z-index: 2;
-	top: 27px;
-	right: 16px;
-	line-height: 1;
-	cursor: pointer;
-}
-.topline-modal__close i{
-	font-size: 25px;
-	font-weight: 300;
-}
-.request-password-reset,
-.signup-modal{
-	display: none;
-}
 body {
 	padding-bottom: 178px;
 	position: relative;
@@ -81,7 +25,7 @@ body {
 	padding: 2px;
 	display: block;
 	border: none;
-	border-bottom: 1px solid #b2b4b6;
+	border-bottom: solid 1px #000;
 	font-family: Open Sans;
 	color: #b2b4b6;
 	font-size: 16px;
@@ -658,7 +602,9 @@ h3 + small {
 .account-login {
 	font-family: Open Sans, sans-serif;
 }
-.account-login .form-control {
+.account-login .form-control,
+.signup-modal .form-control,
+.request-password-reset .form-control{
 	text-align: center;
 }
 .account-login header {
@@ -672,10 +618,10 @@ h3 + small {
 	padding-left: 55px;
 	padding-right: 55px;
 }
-.account-login .account-links a {
-	font-size: 14px;
+.account-links a {
+	font-size: 15px;
 }
-.account-login .account-links a:first-child {
+.account-links a:first-child {
 	margin-right: 25px;
 }
 .eauth-service {
@@ -824,6 +770,102 @@ h3 + small {
 	color: #fff;
 	background: #ff4795;
 }
+.quick-view{
+	display: none;
+}
+/*-- modal --*/
+.topline-modal__bod{
+	position: relative;
+	min-height: 100%;
+}
+.auth-form__backdrop.dn {
+	display: none;
+}
+.auth-form__backdrop.topline-modal-hidden {
+	background: transparent;
+}
+.auth-form__backdrop{
+	position: absolute;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	z-index: 4002;
+	background: rgba(0,0,0,.5);
+	transition: all .2s ease-in-out;
+	overflow-y: auto;
+}
+.auth-form__sidebar-container.hidden-sidebar {
+	transform: translateX(100%);
+}
+.auth-form__sidebar-container {
+	position: fixed;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	z-index: 4003;
+	min-width: 420px;
+	max-width: 100%;
+	width: 360px;
+	padding: 27px 16px;
+	background: #fff;
+	transform: translateX(0);
+	transition: all .2s ease-in-out;
+}
+.topline-modal__close {
+	position: absolute;
+	z-index: 2;
+	top: 27px;
+	right: 16px;
+	line-height: 1;
+	cursor: pointer;
+	width: 30px;
+	height: 30px;
+	color: #a3a3a3;
+	opacity: 0.2;
+	-webkit-transition: 0.1s color linear;
+	-o-transition: 0.1s color linear;
+	transition: 0.1s color linear;
+}
+.topline-modal__close i{
+	font-size: 25px;
+	font-weight: 300;
+}
+.topline-modal__close .fa {
+	-webkit-transition: all 1s ease-in-out;
+	-o-transition: all 1s ease-in-out;
+	transition: all 1s ease-in-out;
+}
+.topline-modal__close:hover{
+	opacity: 1;
+}
+.topline-modal__close:hover .fa {
+	-webkit-transform: rotate(360deg);
+	-ms-transform: rotate(360deg);
+	-o-transform: rotate(360deg);
+	transform: rotate(360deg);
+}
+.request-password-reset,
+.signup-modal{
+	display: none;
+}
+.signup-modal header,
+.request-password-reset header{
+	padding-top: 20px;
+}
+.has-error .form-control,
+.has-success .form-control,
+.form-control,
+.has-success .form-control:focus,
+.form-control:focus,
+.has-success .form-control:focus,
+.has-error .form-control:focus{
+	border-color: #000;
+	box-shadow: none;
+}
+/*---------------------*/
 @media screen and (max-width: 1199px) {
 	.navbar-brand {
 		margin-right: 0.5em;
