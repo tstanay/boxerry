@@ -23,20 +23,25 @@
 <body class="topline-modal__bod">
 <div class="auth-form__backdrop topline-modal-hidden dn">
 	<div class="auth-form__sidebar-container">
-		<span class="topline-modal__close"><i class="fa fa-close"></i></span>
+		<span class="topline-modal__close"><i class="fa fa-times"></i></span>
 
 		<div class="signup-modal p-m">
+			<header class="text-center m-b-lg">
+				<h1>Регистрация</h1>
+				<small class="hidden-xs"></small>
+			</header>
 			<div class="row">
 				<div class="col-lg-12 center-block" style="float:none">
-				<div class="form-wrapper" id="wpologinform">
+				<div class="form-wrapper p-xs" id="wpologinform">
 					<form id="form-signup" action="/site/signup" method="post">
-						<input type="hidden" name="_csrf" value="Fofxouz9211y-CzHZtRQ8Af1IppWQQWtiMxiO2TZHkB8qrLro4mJNiGcH6Y84TuzbYdn2R8JaNrm_g53CqlXOA==">					<h2 class="heading-v2">Регистрация</h2>
+						<input type="hidden" name="_csrf" value="Fofxouz9211y-CzHZtRQ8Af1IppWQQWtiMxiO2TZHkB8qrLro4mJNiGcH6Y84TuzbYdn2R8JaNrm_g53CqlXOA==">
 						<div class="form-group field-signupform-username required has-success">
 
 							<input type="text" id="signupform-username" class="form-control" name="SignupForm[username]" placeholder="Ваше имя" aria-required="true" aria-invalid="false">
 
 							<p class="help-block help-block-error"></p>
-						</div>					<div class="form-group field-signupform-email required">
+						</div>
+						<div class="form-group field-signupform-email required">
 
 						<input type="text" id="signupform-email" class="form-control" name="SignupForm[email]" placeholder="Почта" aria-required="true">
 
@@ -47,12 +52,13 @@
 
 						<p class="help-block help-block-error"></p>
 					</div>
-						<p class="a-center">
-							<button type="submit" class="btn btn-primary" name="signup-button">Зарегистрироваться</button>
-						</p>
-						<p class="a-center">
-							<a class="restore-password" href="#">Забыли пароль?</a>&nbsp;&nbsp;<a class="authorization-btn-modal" href="#">Авторизация</a>
-						</p>
+						<div class="text-center m-b-lg space-top-50">
+							<button type="submit" class="btn-pink" name="signup-button">Зарегистрироваться</button>
+						</div>
+						<div class="text-center account-links">
+							<a class="restore-password" href="#">Забыли пароль?</a>
+							<a class="auth-form__back-link" href="#">Авторизация</a>
+						</div>
 					</form>
 					<div class="text-center">
 						<p class="desc-block space-top-50">Вход через:</p>
@@ -65,37 +71,38 @@
 					</div>
 				</div>
 			</div>
-				<div class="text-center">
-					<a href="#" class="auth-form__back-link"><i class="fa fa-rotate-left"></i> Вернуться назад</a>
-				</div>
 			</div>
 		</div>
 
 		<div class="request-password-reset p-m">
-			<header class="m-t-lg text-center">
+			<header class="m-b-lg text-center">
 				<h1>Востановление пароля</h1>
 				<small class="hidden-xs"></small>
 			</header>
 			<div class="row">
 				<div class="col-sm-12 col-md-12 center-block">
-					<form id="request-password-reset-form" action="/site/request-password-reset" method="post">
+					<div class="form-wrapper p-xs">
+						<form id="request-password-reset-form" action="/site/request-password-reset" method="post">
 						<input type="hidden" name="_csrf" value="qFe2rJCL9p8gCcmZB6PVfha1pGXWjNrbuuKxpMDyYpjCevXl3_-k9HNt-vhdlr49fMfhJp_Et6zU0N3oroIr4A==">				<div class="form-group field-passwordresetrequestform-email required">
 
 						<input type="text" id="passwordresetrequestform-email" class="form-control" name="PasswordResetRequestForm[email]" placeholder="Email" aria-required="true">
 
 						<p class="help-block help-block-error"></p>
-					</div>				<div class="form-group">
-						<button type="submit" class="btn-pink">Востановить</button>				</div>
+					</div>
+						<div class="text-center m-b-lg space-top-50">
+							<button type="submit" class="btn-pink">Востановить</button>
+						</div>
+						<div class="text-center account-links">
+							<a class="auth-form__back-link" href="#">Авторизация</a>
+							<a class="reg-modal" href="#">Регистрация</a>
+						</div>
 					</form>
+					</div>
 				</div>
-				<div class="text-center">
-					<a href="#" class="auth-form__back-link"><i class="fa fa-rotate-left"></i> Вернуться назад</a>
-				</div>
-
 			</div>
 		</div>
 
-		<div class="inner account-login">
+		<div class="inner account-login p-m">
 			<header class="m-b-lg text-center">
 				<h1>Авторизация</h1>
 				<small class="hidden-xs">
@@ -110,20 +117,20 @@
 
 							<input type="text" id="loginform-email" class="form-control" name="LoginForm[email]" placeholder="Почта" aria-required="true" aria-invalid="true">
 
-							<p class="help-block help-block-error">Значение «Email» не является правильным email адресом.</p>
+							<p class="help-block help-block-error"></p>
 						</div>					<div class="form-group field-loginform-password required has-success">
 
 							<input type="password" id="loginform-password" class="form-control" name="LoginForm[password]" placeholder="Пароль" aria-required="true" aria-invalid="false">
 
 							<p class="help-block help-block-error"></p>
 						</div>
-							<p class="text-center m-b-lg space-top-50">
+							<div class="text-center m-b-lg space-top-50">
 								<button type="submit" class="btn-pink" name="login-button">Войти</button>
-							</p>
-							<p class="text-center account-links">
+							</div>
+							<div class="text-center account-links">
 								<a class="restore-password" href="#">Забыли пароль?</a>
 								<a class="reg-modal" href="#">Регистрация</a>
-							</p>
+							</div>
 						</form>
 					</div>
 				</div>
