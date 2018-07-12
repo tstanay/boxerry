@@ -49,22 +49,22 @@ $(function () {
         evt.preventDefault();
     });
 
-    $('#point_1').click(function(){
-        $('.block_1').show();
-        $('.block_2').hide();
-        $('.block_3').hide();
+    $('#point_Boxerry').click(function(){
+        $('.block_Boxerry').show();
+        $('.block_cdek').hide();
+        $('.block_express').hide();
     });
 
-    $('#point_2').click(function(){
-        $('.block_2').show();
-        $('.block_1').hide();
-        $('.block_3').hide();
+    $('#point_cdek').click(function(){
+        $('.block_cdek').show();
+        $('.block_Boxerry').hide();
+        $('.block_express').hide();
     });
 
-    $('#point_3').click(function(){
-        $('.block_3').show();
-        $('.block_1').hide();
-        $('.block_2').hide();
+    $('#point_express').click(function(){
+        $('.block_express').show();
+        $('.block_Boxerry').hide();
+        $('.block_cdek').hide();
     });
 });
 
