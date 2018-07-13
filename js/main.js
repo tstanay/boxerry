@@ -49,23 +49,30 @@ $(function () {
         evt.preventDefault();
     });
 
-    $('#point_Boxerry').click(function(){
-        $('.block_Boxerry').show();
-        $('.block_cdek').hide();
-        $('.block_express').hide();
-    });
 
-    $('#point_cdek').click(function(){
-        $('.block_cdek').show();
-        $('.block_Boxerry').hide();
-        $('.block_express').hide();
-    });
+    $('.js-example-basic-single').select2();
 
-    $('#point_express').click(function(){
-        $('.block_express').show();
-        $('.block_Boxerry').hide();
-        $('.block_cdek').hide();
+    $('.js-example-basic-single').on('change', function () {
+        var el = $(this);
+        switch (el.val()) {
+            case "1":
+                $('.block_Boxerry').show();
+                $('.block_cdek').hide();
+                $('.block_express').hide();
+                break;
+            case "2":
+                $('.block_cdek').show();
+                $('.block_Boxerry').hide();
+                $('.block_express').hide();
+                break;
+            case "3":
+                $('.block_express').show();
+                $('.block_Boxerry').hide();
+                $('.block_cdek').hide();
+                break;
+        }
     });
+    $('.js-example-basic-single2').select2();
 });
 
 $('.wpb_wrapper').mousemove(function(e){
