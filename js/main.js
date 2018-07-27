@@ -82,7 +82,6 @@ $('.wpb_wrapper').mousemove(function(e){
     parallaxIt(e, '.slideshow_4', -10);
     parallaxIt(e, '.slideshow_5', -10);
     parallaxIt(e, '.slideshow_6', 10);
-    parallaxIt(e, '.slideshow_7', -23);
     //parallaxIt(e, '.main-page-slider', -300);
 });
 
