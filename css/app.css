@@ -1118,6 +1118,47 @@ h3 + small {
 	}
 }
 @media screen and (max-width: 767px) {
+	.slideshow_1{
+		left: 1%;
+		top: 72%;
+		width: 77px;
+		height: 71px;
+	}
+	.slideshow_2{
+		width: 472px;
+		height: 391px;
+		right: 6%;
+		top: 35%;
+	}
+	.slideshow_3{
+		width: 356px;
+		height: 274px;
+		right: unset;
+		top: unset;
+		bottom: 0;
+		left: 4%;
+	}
+	.slideshow_4{
+		width: 77px;
+		height: 68px;
+		right: 8%;
+		top: 42%;
+	}
+	.slideshow_5{
+		width: 144px;
+		height: 122px;
+		right: 27%;
+		top: unset;
+		bottom: 12%;
+	}
+	.slideshow_6{
+		width: 463px;
+		height: 305px;
+		right: unset;
+		top: unset;
+		bottom: 5%;
+		left: 3%;
+	}
 	h1, h2 {
 		font-size: 25px;
 	}
