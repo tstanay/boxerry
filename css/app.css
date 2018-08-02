@@ -610,7 +610,7 @@ h3 + small {
 	margin-bottom: 70px;
 }
 .block-work .panel-title{
-	display: inline-block;
+	display: block;
 }
 .block-work{
 	background: #F4F4F4;
@@ -1158,6 +1158,37 @@ h3 + small {
 		top: unset;
 		bottom: 5%;
 		left: 3%;
+	}
+	.like-table-row{
+		width: auto;
+	}
+	.how-it-work .row {
+		margin-bottom: 30px;
+	}
+	.how-it-work header{
+		margin-bottom: 0;
+	}
+	.like-table-row h2{
+		margin-top: 0;
+	}
+	.subscribe-bx form {
+		margin-top: 60px;
+	}
+	.form.mc4wp-form{
+		width: auto;
+	}
+	.subscribe-bx .form-control {
+		width: 100%;
+	}
+	.subscribe-bx .input-form, .subscribe-bx .button-submit {
+		display: block;
+	}
+	.panel-title,
+	.plus-icon{
+		font-size: 18px;
+	}
+	.panel-group{
+		margin-bottom: 40px;
 	}
 	h1, h2 {
 		font-size: 25px;
