@@ -394,7 +394,7 @@ h3 + small {
 	margin-top: 60px;
 }
 .subscribe-block > p {
-	margin-top: 70px;
+	margin-top: 50px;
 }
 .subscribe-bx {
 	background: url("/img/p/email_bg.png") no-repeat center;
@@ -646,6 +646,7 @@ h3 + small {
 	font-size: 30px;
 	float: right;
 	line-height: 30px;
+	cursor: pointer;
 }
 .panel-title{
 	font-size: 20px;
@@ -1141,6 +1142,10 @@ h3 + small {
 .bg-grey{
 	width: 100%;
 	background: rgb(247, 247, 247);
+}
+.cart_item h4{
+	color: #ff4795;
+	font-weight: 500;
 }
 
 /*---------------------*/
